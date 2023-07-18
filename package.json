@@ -1,0 +1,31 @@
+{
+  "name": "discord-tablet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/*",
+  "scripts": {
+    "test": "node test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baramex/discord-tablet.git"
+  },
+  "author": "baramex <contact@baramex.me> (https://baramex.me)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/baramex/discord-tablet/issues"
+  },
+  "private": true,
+  "homepage": "https://github.com/baramex/discord-tablet#readme",
+  "dependencies": {
+    "canvas": "^2.11.2",
+    "discord.js": "^14.11.0",
+    "path": "^0.12.7"
+  },
+  "files": [
+    "lib/"
+  ],
+  "devDependencies": {
+    "dotenv": "^16.3.1"
+  }
+}
