@@ -15,7 +15,7 @@ client.on('ready', async () => {
     if (process.env.CHANNEL_ID) {
         const tablet = new Tablet({ applications: [new TestApplication()] });
 
-        await client.channels.cache.get(process.env.CHANNEL_ID)?.send({ files: [new AttachmentBuilder().setFile(await tablet.render())] });
+        await client.channels.cache.get(process.env.CHANNEL_ID)?.send({ files: [new AttachmentBuilder().setFile(await tablet.render())], components: tablet.getDiscordComponents() });
 
         process.exit(0);
     }
